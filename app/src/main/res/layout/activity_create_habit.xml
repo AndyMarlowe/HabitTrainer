@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:padding="8dp"
+        android:orientation="vertical"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".CreateHabitActivity">
+
+    <EditText android:id="@+id/et_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/eat_an_apple"/>
+    <EditText android:id="@+id/et_descr" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/apple_descr" android:inputType="textImeMultiLine" android:lines="2"/>
+    <Button android:id="@+id/btn_choose_image" android:text="@string/choose_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:onClick="chooseImage"/>
+    <ImageView android:id="@+id/iv_image" android:layout_gravity="center_horizontal" android:padding="10dp" android:contentDescription="@string/selected_image" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <Button android:id="@+id/btn_save" android:text="@string/save" android:layout_width="match_parent" android:layout_height="wrap_content" android:onClick="storeHabit"/>
+    <TextView android:id="@+id/tv_error" android:visibility="invisible" android:textColor="#e53935" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

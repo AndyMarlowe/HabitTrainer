@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:elevation="24dp"
+                                   android:layout_marginBottom="8dp"
+                                   xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="16dp">
+
+        <ImageView android:layout_width="64dp" android:layout_height="64dp" android:id="@+id/iv_icon" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_marginRight="16dp" android:layout_alignParentStart="true" android:layout_marginEnd="16dp" android:contentDescription="@string/habit_icon"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/tv_title" android:layout_toRightOf="@+id/iv_icon"  android:textSize="30sp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/tv_description" android:layout_toRightOf="@+id/iv_icon" android:layout_below="@+id/tv_title" />
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
